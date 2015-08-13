@@ -21,7 +21,7 @@
     newDiv.style.width = "11.1%";
     newDiv.style.paddingBottom = "11.1%";
     newDiv.style.cssFloat = "left";
-    newDiv.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
+    newDiv.style.backgroundColor = "rgb(" + rndClrNumGen() + ",23,243)";
     return body.appendChild(newDiv);
   }
 
@@ -30,7 +30,7 @@
     newDiv2.style.width = "11.1%";
     newDiv2.style.paddingBottom = "11.1%";
     newDiv2.style.cssFloat = "left";
-    newDiv2.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
+    newDiv2.style.backgroundColor = "rgb(" + rndClrNumGen() + ",242,20)";
     return body.appendChild(newDiv2);
   }
 
