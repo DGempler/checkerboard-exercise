@@ -6,10 +6,11 @@
 // * Set each tile's `float` property to `left`
 // * Each tile's paddingBottom is `11.1%`
 
-(function() {
+setInterval(function() {
 
 
   var body = document.querySelector('body');
+
 
   function rndClrNumGen() {
     return Math.floor(Math.random() * 256);
@@ -21,7 +22,7 @@
     newDiv.style.width = "11.1%";
     newDiv.style.paddingBottom = "11.1%";
     newDiv.style.cssFloat = "left";
-    newDiv.style.backgroundColor = "rgb(" + rndClrNumGen() + ",23,243)";
+    newDiv.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
     return body.appendChild(newDiv);
   }
 
@@ -30,7 +31,7 @@
     newDiv2.style.width = "11.1%";
     newDiv2.style.paddingBottom = "11.1%";
     newDiv2.style.cssFloat = "left";
-    newDiv2.style.backgroundColor = "rgb(" + rndClrNumGen() + ",242,20)";
+    newDiv2.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
     return body.appendChild(newDiv2);
   }
 
@@ -41,6 +42,9 @@
   }
   divCreatorBlack();
 
+  setTimeout(function(){
+    body.innerHTML = "";
+  }, 1950);
 
 
-})();
+}, 2000);
