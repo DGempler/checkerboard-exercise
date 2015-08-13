@@ -8,6 +8,9 @@
 
 (function() {
 
+
+  var body = document.querySelector('body');
+
   function rndClrNumGen() {
     return Math.floor(Math.random() * 256);
   }
@@ -17,9 +20,6 @@
     rndmClrNums[j] = rndClrNumGen();
   }
 
-  console.log(rndmClrNums);
-
-  var body = document.querySelector('body');
 
   function divCreatorBlack() {
     var newDiv = document.createElement('div');
@@ -35,25 +35,16 @@
     newDiv2.style.width = "11.1%";
     newDiv2.style.paddingBottom = "11.1%";
     newDiv2.style.cssFloat = "left";
-    newDiv.style.backgroundColor = "rgb(" + rndmClrNums[3] + "," + rndmClrNums[4] + "," + rndmClrNums[5] + ")";
+    newDiv2.style.backgroundColor = "rgb(" + rndmClrNums[3] + "," + rndmClrNums[4] + "," + rndmClrNums[5] + ")";
     return body.appendChild(newDiv2);
   }
 
-  (function createBoard() {
 
   for (var i = 0; i < 40; i++) {
     divCreatorBlack();
     divCreatorRed();
   }
   divCreatorBlack();
-
-})();
-
-
-
-
-
-
 
 
 
