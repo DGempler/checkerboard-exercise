@@ -8,6 +8,16 @@
 
 (function() {
 
+  function rndClrNumGen() {
+    return Math.floor(Math.random() * 256);
+  }
+  var rndmClrNums = [];
+
+  for (var j = 0; j < 6; j++) {
+    rndmClrNums[j] = rndClrNumGen();
+  }
+
+  console.log(rndmClrNums);
 
   var body = document.querySelector('body');
 
@@ -16,7 +26,7 @@
     newDiv.style.width = "11.1%";
     newDiv.style.paddingBottom = "11.1%";
     newDiv.style.cssFloat = "left";
-    newDiv.style.backgroundColor = "black";
+    newDiv.style.backgroundColor = "rgb(" + rndmClrNums[0] + "," + rndmClrNums[1] + "," + rndmClrNums[2] + ")";
     return body.appendChild(newDiv);
   }
 
@@ -25,9 +35,11 @@
     newDiv2.style.width = "11.1%";
     newDiv2.style.paddingBottom = "11.1%";
     newDiv2.style.cssFloat = "left";
-    newDiv2.style.backgroundColor = "red";
+    newDiv.style.backgroundColor = "rgb(" + rndmClrNums[3] + "," + rndmClrNums[4] + "," + rndmClrNums[5] + ")";
     return body.appendChild(newDiv2);
   }
+
+  (function createBoard() {
 
   for (var i = 0; i < 40; i++) {
     divCreatorBlack();
@@ -35,6 +47,7 @@
   }
   divCreatorBlack();
 
+})();
 
 
 
