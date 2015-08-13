@@ -14,11 +14,6 @@
   function rndClrNumGen() {
     return Math.floor(Math.random() * 256);
   }
-  var rndmClrNums = [];
-
-  for (var j = 0; j < 6; j++) {
-    rndmClrNums[j] = rndClrNumGen();
-  }
 
 
   function divCreatorBlack() {
@@ -26,7 +21,7 @@
     newDiv.style.width = "11.1%";
     newDiv.style.paddingBottom = "11.1%";
     newDiv.style.cssFloat = "left";
-    newDiv.style.backgroundColor = "rgb(" + rndmClrNums[0] + "," + rndmClrNums[1] + "," + rndmClrNums[2] + ")";
+    newDiv.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
     return body.appendChild(newDiv);
   }
 
@@ -35,7 +30,7 @@
     newDiv2.style.width = "11.1%";
     newDiv2.style.paddingBottom = "11.1%";
     newDiv2.style.cssFloat = "left";
-    newDiv2.style.backgroundColor = "rgb(" + rndmClrNums[3] + "," + rndmClrNums[4] + "," + rndmClrNums[5] + ")";
+    newDiv2.style.backgroundColor = "rgb(" + rndClrNumGen() + "," + rndClrNumGen() + "," + rndClrNumGen() + ")";
     return body.appendChild(newDiv2);
   }
 
