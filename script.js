@@ -1,4 +1,4 @@
-// Your JS goes here
+  // Your JS goes here
 // **Hints**
 
 // * Each tile should be a `div`
